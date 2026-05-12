@@ -5,7 +5,7 @@ from keras.models import load_model
 st.set_option('deprecation.showfileUploaderEncoding',False)
 @st.cache(allow_output_mutation=True)
 def load_classfication_model():
-  model = load_model('/content/model_pneumonia_detection.h5')
+  model = load_model('model_pneumonia_detection.h5')
   return model
 
 model = load_classfication_model()
