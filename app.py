@@ -1,6 +1,6 @@
 import streamlit as st
 import tensorflow as tf
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 st.set_option('deprecation.showfileUploaderEncoding',False)
 @st.cache(allow_output_mutation=True)
