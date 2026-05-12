@@ -1,11 +1,11 @@
 import streamlit as st
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 from PIL import Image, ImageOps
 import numpy as np
 
 @st.cache_resource
 def load_classification_model():
-    model = load_model('model_pneumonia_detection.h5')
+    model = load_model('trained.h5')
     return model
 
 model = load_classification_model()
